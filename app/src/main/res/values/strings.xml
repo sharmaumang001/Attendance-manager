@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Attendance Manager</string>
+
+    <string-array name="subjects">
+        <item>Maths</item>
+        <item>Electronics</item>
+        <item>Electrical</item>
+        <item>Chemistry</item>
+        <item>EVC</item>
+        <item>IT Workshop</item>
+        <item>Practicum</item>
+        <item>Electronics Lab</item>
+        <item>Electrical Lab</item>
+        <item>Chemistry Lab</item>
+    </string-array>
+
+</resources>
