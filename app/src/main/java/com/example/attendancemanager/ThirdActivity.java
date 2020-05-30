@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import es.dmoral.toasty.Toasty;
 
 public class ThirdActivity extends AppCompatActivity {
 
@@ -35,5 +36,8 @@ public class ThirdActivity extends AppCompatActivity {
         editor.putInt("total",total);
         editor.apply();
         finish();
+        Toasty.success(getApplicationContext(),"Edit complete",Toasty.LENGTH_SHORT).show();
+
+
     }
 }

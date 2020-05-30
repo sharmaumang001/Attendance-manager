@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6A7FF6"
+    android:background="#99b898"
     tools:context=".ThirdActivity">
 
     <TextView
@@ -12,13 +12,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Maths"
+        android:textStyle="bold"
+        android:textColor="#000000"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <TextView
         android:id="@+id/textView3"
@@ -26,13 +28,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="Classes you attended"
+        android:textColor="#222831"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintHorizontal_bias="0.134"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subjecttxt"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.099" />
 
     <EditText
         android:id="@+id/presenttxt"
@@ -40,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -50,6 +54,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Total Classes"
+        android:textStyle="bold"
+        android:textColor="#222831"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/presenttxt"
         app:layout_constraintTop_toBottomOf="@+id/presenttxt" />
@@ -60,19 +66,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="116dp"
+        android:background="#e84a5f"
         android:onClick="update"
         android:text="Update"
+        android:textSize="20dp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/totaltxt" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

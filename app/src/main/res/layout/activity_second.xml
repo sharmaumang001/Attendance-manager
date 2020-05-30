@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#647AF4"
+    android:background="#99b898"
     tools:context=".SecondActivity">
 
     <TextView
@@ -12,61 +12,72 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Maths"
+        android:textColor="#000000"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.086" />
 
     <TextView
         android:id="@+id/percenttxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0/0    0%"
+        android:textColor="#000000"
         android:textSize="24sp"
+
         app:layout_constraintBottom_toBottomOf="@+id/subjecttxt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/subjecttxt"
-        app:layout_constraintTop_toTopOf="@+id/subjecttxt" />
+        app:layout_constraintTop_toTopOf="@+id/subjecttxt"
+        app:layout_constraintVertical_bias="0.437" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="127dp"
+        android:layout_height="63dp"
+        android:background="#ff847c"
         android:onClick="absentClick"
         android:text="Absent"
+        android:textSize="20dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintHorizontal_bias="0.229"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subjecttxt"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.327" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="127dp"
+        android:layout_height="63dp"
+        android:background="#ff847c"
         android:onClick="presentClick"
         android:text="Present"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.577"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="212dp"
+        android:background="#e84a5f"
         android:onClick="editClick"
         android:text="Edit"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
